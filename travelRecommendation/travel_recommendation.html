@@ -4,24 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Recommendations</title>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <nav class="navbar">
-        <a href="home.html">Home</a>
-        <a href="about_us.html">About Us</a>
-        <a href="contact_us.html">Contact Us</a>
-        <form id="searchForm">
-            <input type="text" id="searchInput" placeholder="Enter keywords...">
-            <button type="submit">Search</button>
-            <button type="button" id="resetBtn">Reset</button>
+        <a href="#" class="nav-item">Home</a>
+        <a href="about_us.html" class="nav-item">About Us</a>
+        <a href="contact_us.html" class="nav-item">Contact Us</a>
+        <form class="search-form">
+            <input type="text" class="search-bar" id="search-bar" placeholder="Search...">
+            <button type="submit" class="search-button" id="search-button">Search</button>
+            <button type="reset" class="reset-button" id="clear-button">Reset</button>
         </form>
     </nav>
-
-    <div class="content">
-        <!-- Content will be dynamically loaded here -->
+    <div class="background-image"></div>
+    <div class="introduction">
+        <h1>Welcome to Travel Recommendations</h1>
+        <p>Explore the best travel destinations recommended just for you!</p>
     </div>
+    
+    <div id="results-container"></div>
 
-    <script src="./travel_recommendation.js"></script>
+    <script src="travel_recommendation.js"></script>
 </body>
 </html>
